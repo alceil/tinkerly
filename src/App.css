@@ -1,0 +1,74 @@
+h1{
+  margin: 0px;
+  padding: 0px;
+}
+.tinkerly-container{
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+justify-content: center;  
+align-items: center;
+}
+/* .tinkerly-container p{
+  animation: 
+  typing 5s steps(40, end),
+  blink-caret .75s step-end infinite;
+} */
+input{
+  border-radius: 5px;
+  width: 500px;
+  height: 20px;
+  border: 2px solid #ccc;
+/* box-shadow:  0 1px 4px rgb(128, 128, 128); */
+
+}
+
+.shortened-link-container{
+  display: flex;
+  border-radius: 5px;
+  width: 418px;
+  height: 25px;
+justify-content: space-around;
+
+  border: 2px solid #ccc;
+}
+
+button{
+  margin: 10px;
+  border-radius: 5px;
+background-color: #41b883;
+color:white;
+border: none;
+font-weight: bold;
+padding: 10px;
+/* box-shadow: 0 1px 7px rgb(128, 128, 128); */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.copy-btn{
+	cursor: pointer;
+		position: relative;
+bottom: 10px;
+top: -5px;
+left: 20px;
+		height: 80%;
+		width: 40px;
+		margin-right: 0.25rem;
+		padding: 0.5rem;
+		transition: transform 200ms ease;
+}
+
+.copy-btn:active {
+			transform: scale(0.8);
+		}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
+}
